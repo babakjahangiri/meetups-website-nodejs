@@ -1,0 +1,14 @@
+{
+  "name": "roux-academy",
+  "version": "1.0.0",
+  "description": "Exercise files for my course Building a Website with Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Daniel Khan",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
