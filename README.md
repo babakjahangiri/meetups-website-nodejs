@@ -25,6 +25,8 @@ npx eslint --init
 > Y
 
 npm install -D prettier eslint-config-prettier eslint-plugin-prettier
+
+npm install http-errors
 ```
 
 ## Extensions

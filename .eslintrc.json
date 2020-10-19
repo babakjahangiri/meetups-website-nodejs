@@ -14,7 +14,8 @@
     "SharedArrayBuffer": "readonly"
   },
   "rules": {
+    "brace-style": "warn",
     "no-var": "error",
-    "arrow-parens": [true, "ban-single-arg-parens"]
+    "object-curly-spacing": ["error", "always"]
   }
 }
