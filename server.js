@@ -3,6 +3,8 @@ const path = require('path');
 const cookieSession = require('cookie-session');
 const createError = require('http-errors');
 
+const bodyParse = require('body-parser');
+
 const FeedbackService = require('./services/FeedbackService');
 const SpeakersService = require('./services/SpeakerService');
 
@@ -55,6 +57,7 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
   res.locals.message = err.message;
+  console.error(err);
   const status = err.status || 500;
   res.locals.status = status;
   res.status(status);
