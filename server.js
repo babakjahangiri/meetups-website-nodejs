@@ -15,8 +15,6 @@ const routes = require('./routes');
 
 const app = express();
 
-const port = 3000;
-
 app.set('trust proxy', 1); //trust cookeis that pass through your reverse proxy
 
 app.use(
@@ -67,6 +65,7 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
-app.listen(port, () => {
-  console.log(`app is running on port ${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`app is running on port ${PORT}`);
 });
