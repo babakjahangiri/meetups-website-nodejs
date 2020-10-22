@@ -3,6 +3,15 @@
     <div class="col-md-4">
       <div class="maincontent">
         <h1>Send us feedback</h1>
+        <% if (locals.errors) { %>
+        <div class="alert alert-danger">
+          <ul>
+            <% errors.forEach((error)=> { %>
+            <li><%= error.msg %></li>
+            <%})%>
+          </ul>
+        </div>
+        <%}%>
         <form class="feedback-form" method="post" action="/feedback">
           <div class="form-group">
             <label for="feedback-form-name">Name</label>
